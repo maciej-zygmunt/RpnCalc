@@ -11,7 +11,7 @@ public class ListOfOperators {
                 new GenericOperator("COS",s->{ return Math.cos(s.pop());}),
                 new GenericOperator("+",s->{ return s.pop()+ s.pop();}),
                 new GenericOperator("-",s->{ return -s.pop()+ s.pop();}),
-                new GenericOperator("/",s->{ double a=s.pop();double b= s.pop();return a/b;}),
+                new GenericOperator("/",s->{ double a=s.pop();double b= s.pop();return b/a;}),
                 new GenericOperator("*",s->{ return s.pop()* s.pop();})
         );
         return operators;

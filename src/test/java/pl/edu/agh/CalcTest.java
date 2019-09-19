@@ -27,7 +27,14 @@ public class CalcTest
         Assert.assertEquals(4,actual,0.01);
         System.out.println("Success");
     }
-
+    @Test
+    public void calcTestDiv()
+    {
+        String input="4 2 / ";
+        double actual=new Calc(ListOfOperators.CreateList()).calculate(input);
+        Assert.assertEquals(2,actual,0.01);
+        System.out.println("Success");
+    }
     @Test
     public void calcTestSin()
     {
